@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Comments</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <center>
+
+            <div class="row mt-5">
+                <div class="container">
+                    <div class="head col-7 mb-4">
+                        <h5>A Webpage for Realtime Commenting System developed using Node.js, Express & MongoDB</h5>
+                    </div>
+                    <p class="content col-10">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ipsam aut, minima numquam dolor ut id labore officiis, blanditiis nam incidunt tempore sunt et. Dolor inventore accusamus, perspiciatis veritatis quo vel dolorem magni eligendi odio architecto, perferendis iusto pariatur quos ab harum, labore in? Fugit ipsa, at magni reprehenderit dignissimos labore quos sapiente voluptas quibusdam totam nostrum quaerat expedita minus itaque laboriosam aperiam amet error doloribus ea animi velit illum! Unde quo pariatur aspernatur fugit blanditiis, sapiente autem! Soluta veritatis eaque eos earum tenetur eligendi quas dicta perferendis suscipit illum! Soluta minima veritatis error in eligendi placeat quisquam sunt iste.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="container col-8">
+                    <div class="border-bottom col-10 pb-1"><h5>Comments</h5></div>
+                    <div class="text-white mt-4">Write a Comment</div>
+                    <textarea class="mt-2 p-3 pt-2 pb-2 comment-box col-9" rows="3"></textarea>
+                    <div class="col-2"><button class="btn btn-success mt-3 form-control post-button">Post</button></div>
+                </div>
+            </div>
+
+            <div class="row mt-5 allcomments">
+                <div class="live-typing mb-2"></div>
+                <ul class="comments">
+
+                </ul>
+
+            </div>
+
+        </center>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="/javascript/script.js"></script>
+</body>
+</html>

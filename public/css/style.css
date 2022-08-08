@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+body {
+    margin-bottom: 40px;
+}
+
+.row .head {
+    font-family: 'Kanit', sans-serif;
+    min-width: 270px;
+}
+
+.row .content {
+    color: darkgrey;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+textarea {
+    padding: 2px;
+    outline: none;
+    resize: none;
+    font-weight: 800;
+    font-size: 17px;
+    min-width: 260px;
+}
+
+.post-button {
+    min-width: 70px;
+    user-select: none;
+}
+
+.commentor {
+    font-size: 18px;
+}
+
+.comments {
+    list-style-type: none;
+    cursor: default;
+}
+
+.oneComment {
+    animation: commentEffect 0.5s ease forwards;
+}
+
+.live-typing {
+    color: whitesmoke;
+}
+
+@keyframes commentEffect {
+    0% {
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    textarea {
+        margin-left: -3.5px;
+    }
+    .post-button {
+        margin-left: -6px;
+    }
+  }
